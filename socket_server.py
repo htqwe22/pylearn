@@ -14,7 +14,7 @@ def socket_create():
     #    pass
     return s
 
-if __name__ == '__main__':
+def server_run():
     sa = socket_create()
     inputs = [sa]
     num = 0
@@ -37,6 +37,10 @@ if __name__ == '__main__':
                 else:
                     print data
                     m.send(data)
+                    
+if __name__ == '__main__':
+	server_run()
+    
           
         
 
